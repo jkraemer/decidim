@@ -134,12 +134,34 @@ $ bin/rails decidim:upgrade
 $ bin/rails db:migrate
 ```
 
-You can also make sure new translations are complete for all languages in your
-application with:
+To make sure that new translations are complete for all languages in your
+application, so can add and configure the
+[i18n-tasks](https://github.com/glebm/i18n-tasks) gem. You can add something
+like the following to your configuration to make sure decidim engines are
+checked:
 
-```
-$ bin/rails decidim:check_locales
+```yml
+data:
+  read:
+    - "<%= %x[bundle show decidim-core].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-admin].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-system].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-api].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-meetings].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-proposals].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-budgets].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-pages].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-comments].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-surveys].chomp %>/config/locales/%{locale}.yml"
+    - "<%= %x[bundle show decidim-dev].chomp %>/config/locales/%{locale}.yml"
 ```
 
-Be aware that this task might not be able to detect everything, so make sure you
-also manually check your application before upgrading.
+A simpler but less powerful alternative is to setup decidim's development
+repository and run the i18n_tasks using your target locales, like so:
+
+```shell
+ENFORCED_LOCALES="it,en" bundle exec rspec spec/i18n_spec.rb
+```
+
+Be aware that this might not be able to detect everything, so make sure you also
+manually check your application before upgrading.
