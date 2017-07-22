@@ -1,0 +1,40 @@
+<dl>
+  <%= display_for assembly,
+    :title,
+    :subtitle,
+    :hashtag,
+    :slug,
+    :short_description,
+    :description,
+    :meta_scope,
+    :developer_group,
+    :local_area,
+    :target,
+    :participatory_scope,
+    :participatory_structure
+  %>
+
+  <dt><%= display_label(assembly, :hero_image) %></dt>
+  <dd>
+    <% if assembly.hero_image? %>
+      <%= image_tag assembly.hero_image.url.to_s %>
+    <% end %>
+  </dd>
+
+  <dt><%= display_label(assembly, :banner_image) %></dt>
+  <dd>
+    <% if assembly.banner_image? %>
+      <%= image_tag assembly.banner_image.url.to_s %>
+    <% end %>
+  </dd>
+
+  <dt><%= display_label(assembly, :promoted) %></dt>
+  <dd><%= humanize_boolean assembly.promoted? %></dd>
+
+  <dt><%= display_label(assembly, :scope) %></dt>
+  <% if assembly.scope %>
+    <dd><%= translated_attribute assembly.scope.name %></dd>
+  <% else %>
+    <dd><%= t("decidim.scopes.global") %></dd>
+  <% end %>
+</dl>
