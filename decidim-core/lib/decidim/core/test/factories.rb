@@ -294,8 +294,12 @@ FactoryGirl.define do
   end
 
   factory :feature, class: Decidim::Feature do
+    transient do
+      organization { create(:organization) }
+    end
+
     name { Decidim::Faker::Localized.sentence(3) }
-    participatory_process
+    participatory_space { create(:participatory_process, organization: organization) }
     manifest_name "dummy"
     published_at { Time.now }
 
@@ -351,7 +355,7 @@ FactoryGirl.define do
 
   factory :moderation, class: Decidim::Moderation do
     reportable { build(:dummy_resource) }
-    participatory_process { reportable.feature.participatory_process }
+    participatory_process { reportable.feature.participatory_space }
   end
 
   factory :report, class: Decidim::Report do
