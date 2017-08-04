@@ -38,9 +38,9 @@
             </div>
           <% end %>
 
-          <% if current_participatory_process.has_subscopes? %>
+          <% if current_participatory_space.has_subscopes? %>
             <div class="field">
-              <%= form.collection_select :scope_id, subscopes_for(current_participatory_process), :id, :name %>
+              <%= form.collection_select :scope_id, subscopes_for(current_participatory_space), :id, :name %>
             </div>
           <% end %>
 
