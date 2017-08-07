@@ -37,6 +37,7 @@ module Decidim
   autoload :MenuRegistry, "decidim/menu_registry"
   autoload :ManifestRegistry, "decidim/manifest_registry"
   autoload :Abilities, "decidim/abilities"
+  autoload :Events, "decidim/events"
 
   include ActiveSupport::Configurable
 
