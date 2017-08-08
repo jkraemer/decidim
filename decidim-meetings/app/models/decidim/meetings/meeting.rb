@@ -11,6 +11,7 @@ module Decidim
       include Decidim::HasReference
       include Decidim::HasScope
       include Decidim::HasCategory
+      include Decidim::Followable
 
       feature_manifest_name "meetings"
 
