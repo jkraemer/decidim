@@ -10,6 +10,8 @@ module Decidim
 
     field :avatarUrl, !types.String, "The author's avatar url"
 
+    field :profileUrl, !types.String, "The user's profile url"
+
     field :isVerified, !types.Boolean, "Whether the author is verified or not"
 
     field :deleted, !types.Boolean, "Whether the author's account has been deleted or not"

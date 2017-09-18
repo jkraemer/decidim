@@ -13,9 +13,19 @@
             <span class="author__avatar">
               <%= image_tag proposal.author_avatar_url %>
             </span>
-            <span class="author__name">
-              <%= proposal.author_name %>
-            </span>
+            <% if proposal.author&.deleted? %>
+              <span class="author__name">
+                <span class="label label--small label--basic">
+                  <%= t('.deleted') %>
+                </span>
+              </span>
+            <% elsif proposal.author and defined?(decidim_members) %>
+              <%= link_to proposal.author_name, decidim_members.member_path(proposal.author), class: 'author__name' %>
+            <% else %>
+              <span class="author__name">
+                <%= proposal.author_name %>
+              </span>
+            <% end %>
           </div>
         </div>
       </div>

@@ -12,6 +12,10 @@ module Decidim
 
     field :name, !types.String, "The user's name"
 
+    field :profileUrl, !types.String, "The user's profile url" do
+      resolve ->(obj, _args, _ctx) { "/members/#{obj.id}" }
+    end
+
     field :avatarUrl, !types.String, "The user's avatar url" do
       resolve ->(obj, _args, _ctx) { obj.avatar.url }
     end

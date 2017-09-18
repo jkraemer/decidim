@@ -107,7 +107,7 @@ class Comment extends React.Component<CommentProps, CommentState> {
                 </a>
                 { author.deleted ?
                     <span className="label label--small label--basic">{I18n.t("components.comment.deleted_user")}</span> :
-                    <a className="author__name">{author.name}</a>
+                    <a className="author__name" href={author.profileUrl}>{author.name}</a>
                 }
                 { !author.isUser && author.isVerified &&
                   <span>

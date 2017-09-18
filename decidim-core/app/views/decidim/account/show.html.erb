@@ -7,6 +7,7 @@
     <div class="columns large-8 end">
       <%= f.text_field :name %>
       <%= f.email_field :email %>
+      <%= render partial: 'account_form_additional_attributes', locals: { form: f } %>
 
       <% if @account.errors[:password].any? || @account.errors[:password_confirmation].any? %>
         <%= render partial: "password_fields", locals: { form: f } %>

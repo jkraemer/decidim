@@ -48,6 +48,7 @@ describe("<Comment />", () => {
   it("should render author's name in a link with class author__name", () => {
     const wrapper = shallow(<Comment comment={comment} session={session} rootCommentable={rootCommentable} orderBy={orderBy} />);
     expect(wrapper.find("a.author__name").text()).toEqual(comment.author.name);
+    expect(wrapper.find("a.author__name").prop("href")).toEqual(comment.author.profileUrl);
   });
 
   describe("when the author's account has been deleted", () => {

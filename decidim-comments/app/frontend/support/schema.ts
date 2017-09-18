@@ -32,6 +32,8 @@ export type addCommentMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -43,6 +45,8 @@ export type addCommentMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -82,6 +86,8 @@ export type addCommentMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -93,6 +99,8 @@ export type addCommentMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -134,6 +142,8 @@ export type addCommentMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -145,6 +155,8 @@ export type addCommentMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -186,6 +198,8 @@ export type addCommentMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -197,6 +211,8 @@ export type addCommentMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -252,6 +268,8 @@ export type DownVoteMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -263,6 +281,8 @@ export type DownVoteMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -304,6 +324,8 @@ export type DownVoteMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -315,6 +337,8 @@ export type DownVoteMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -356,6 +380,8 @@ export type DownVoteMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -367,6 +393,8 @@ export type DownVoteMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -408,6 +436,8 @@ export type DownVoteMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -419,6 +449,8 @@ export type DownVoteMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -474,6 +506,8 @@ export type UpVoteMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -485,6 +519,8 @@ export type UpVoteMutation = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -526,6 +562,8 @@ export type UpVoteMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -537,6 +575,8 @@ export type UpVoteMutation = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -578,6 +618,8 @@ export type UpVoteMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -589,6 +631,8 @@ export type UpVoteMutation = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -630,6 +674,8 @@ export type UpVoteMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -641,6 +687,8 @@ export type UpVoteMutation = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -724,6 +772,8 @@ export type GetCommentsQuery = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -735,6 +785,8 @@ export type GetCommentsQuery = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -774,6 +826,8 @@ export type GetCommentsQuery = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -785,6 +839,8 @@ export type GetCommentsQuery = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -826,6 +882,8 @@ export type GetCommentsQuery = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -837,6 +895,8 @@ export type GetCommentsQuery = {
               name: string,
               // The author's avatar url
               avatarUrl: string,
+              // The user's profile url
+              profileUrl: string,
               // Whether the author is verified or not
               isVerified: boolean,
               // Whether the author is a user or another kind of author (User Group)
@@ -878,6 +938,8 @@ export type GetCommentsQuery = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -889,6 +951,8 @@ export type GetCommentsQuery = {
                 name: string,
                 // The author's avatar url
                 avatarUrl: string,
+                // The user's profile url
+                profileUrl: string,
                 // Whether the author is verified or not
                 isVerified: boolean,
                 // Whether the author is a user or another kind of author (User Group)
@@ -958,6 +1022,8 @@ export type CommentFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -969,6 +1035,8 @@ export type CommentFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -1010,6 +1078,8 @@ export type CommentFragment = {
         name: string,
         // The author's avatar url
         avatarUrl: string,
+        // The user's profile url
+        profileUrl: string,
         // Whether the author is verified or not
         isVerified: boolean,
         // Whether the author is a user or another kind of author (User Group)
@@ -1021,6 +1091,8 @@ export type CommentFragment = {
         name: string,
         // The author's avatar url
         avatarUrl: string,
+        // The user's profile url
+        profileUrl: string,
         // Whether the author is verified or not
         isVerified: boolean,
         // Whether the author is a user or another kind of author (User Group)
@@ -1062,6 +1134,8 @@ export type CommentFragment = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -1073,6 +1147,8 @@ export type CommentFragment = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -1114,6 +1190,8 @@ export type CommentFragment = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -1125,6 +1203,8 @@ export type CommentFragment = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -1171,6 +1251,8 @@ export type CommentDataFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -1182,6 +1264,8 @@ export type CommentDataFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -1227,6 +1311,8 @@ export type CommentThreadFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -1238,6 +1324,8 @@ export type CommentThreadFragment = {
       name: string,
       // The author's avatar url
       avatarUrl: string,
+      // The user's profile url
+      profileUrl: string,
       // Whether the author is verified or not
       isVerified: boolean,
       // Whether the author is a user or another kind of author (User Group)
@@ -1277,6 +1365,8 @@ export type CommentThreadFragment = {
         name: string,
         // The author's avatar url
         avatarUrl: string,
+        // The user's profile url
+        profileUrl: string,
         // Whether the author is verified or not
         isVerified: boolean,
         // Whether the author is a user or another kind of author (User Group)
@@ -1288,6 +1378,8 @@ export type CommentThreadFragment = {
         name: string,
         // The author's avatar url
         avatarUrl: string,
+        // The user's profile url
+        profileUrl: string,
         // Whether the author is verified or not
         isVerified: boolean,
         // Whether the author is a user or another kind of author (User Group)
@@ -1329,6 +1421,8 @@ export type CommentThreadFragment = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -1340,6 +1434,8 @@ export type CommentThreadFragment = {
           name: string,
           // The author's avatar url
           avatarUrl: string,
+          // The user's profile url
+          profileUrl: string,
           // Whether the author is verified or not
           isVerified: boolean,
           // Whether the author is a user or another kind of author (User Group)
@@ -1381,6 +1477,8 @@ export type CommentThreadFragment = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)
@@ -1392,6 +1490,8 @@ export type CommentThreadFragment = {
             name: string,
             // The author's avatar url
             avatarUrl: string,
+            // The user's profile url
+            profileUrl: string,
             // Whether the author is verified or not
             isVerified: boolean,
             // Whether the author is a user or another kind of author (User Group)

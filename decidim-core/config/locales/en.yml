@@ -323,6 +323,7 @@ en:
         admin_dashboard: Admin dashboard
         notifications: Notifications
         profile: My account
+        public_profile: My public profile
         sign_out: Sign out
       user_profile:
         account: Account
